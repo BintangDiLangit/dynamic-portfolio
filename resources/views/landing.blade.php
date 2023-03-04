@@ -6,11 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="Start your development with Steller landing page.">
     <meta name="author" content="Devcrud">
-    <title>Steller Landing page | Free Bootstrap 4.1 landing page</title>
+    <title>Bintang Portfolio</title>
     <!-- font icons -->
-    <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
+    <link rel="stylesheet" href="{{ asset('assets/vendors/themify-icons/css/themify-icons.css') }}">
     <!-- Bootstrap + Steller main styles -->
-    <link rel="stylesheet" href="assets/css/steller.css">
+    <link rel="stylesheet" href="{{ asset('assets/css/steller.css') }}">
 </head>
 
 <body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
@@ -18,7 +18,7 @@
     <!-- Page navigation -->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" data-spy="affix" data-offset-top="0">
         <div class="container">
-            <a class="navbar-brand" href="#"><img src="assets/imgs/logo.svg" alt=""></a>
+            <a class="navbar-brand" href="#"><img src="{{ asset('assets/imgs/logo.svg') }}" alt=""></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -77,7 +77,7 @@
                 </div>
             </div>
             <div class="img-holder">
-                <img src="assets/imgs/man.svg" alt="">
+                <img src="{{ asset('assets/imgs/man.svg') }}" alt="">
             </div>
         </div>
 
@@ -104,7 +104,7 @@
         <div class="container mt-5">
             <div class="row text-center text-md-left">
                 <div class="col-md-3">
-                    <img src="assets/imgs/avatar.jpg" alt="" class="img-thumbnail mb-4">
+                    <img src="{{ asset('assets/imgs/avatar.jpg') }}" alt="" class="img-thumbnail mb-4">
                 </div>
                 <div class="pl-md-4 col-md-9">
                     <h6 class="title">James Smith</h6>
@@ -220,7 +220,7 @@
             <div class="row">
                 <div class="col-sm-4">
                     <div class="img-wrapper">
-                        <img src="assets/imgs/folio-1.jpg" alt="">
+                        <img src="{{ asset('assets/imgs/folio-1.jpg') }}" alt="">
                         <div class="overlay">
                             <div class="overlay-infos">
                                 <h5>Project Title</h5>
@@ -230,29 +230,7 @@
                         </div>
                     </div>
                     <div class="img-wrapper">
-                        <img src="assets/imgs/folio-2.jpg" alt="">
-                        <div class="overlay">
-                            <div class="overlay-infos">
-                                <h5>Project Title</h5>
-                                <a href="javascript:void(0)"><i class="ti-zoom-in"></i></a>
-                                <a href="javascript:void(0)"><i class="ti-link"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-4">
-                    <div class="img-wrapper">
-                        <img src="assets/imgs/folio-3.jpg" alt="">
-                        <div class="overlay">
-                            <div class="overlay-infos">
-                                <h5>Project Title</h5>
-                                <a href="javascript:void(0)"><i class="ti-zoom-in"></i></a>
-                                <a href="javascript:void(0)"><i class="ti-link"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="img-wrapper">
-                        <img src="assets/imgs/folio-4.jpg" alt="">
+                        <img src="{{ asset('assets/imgs/folio-2.jpg') }}" alt="">
                         <div class="overlay">
                             <div class="overlay-infos">
                                 <h5>Project Title</h5>
@@ -264,7 +242,7 @@
                 </div>
                 <div class="col-sm-4">
                     <div class="img-wrapper">
-                        <img src="assets/imgs/folio-5.jpg" alt="">
+                        <img src="{{ asset('assets/imgs/folio-3.jpg') }}" alt="">
                         <div class="overlay">
                             <div class="overlay-infos">
                                 <h5>Project Title</h5>
@@ -274,7 +252,29 @@
                         </div>
                     </div>
                     <div class="img-wrapper">
-                        <img src="assets/imgs/folio-6.jpg" alt="">
+                        <img src="{{ asset('assets/imgs/folio-4.jpg') }}" alt="">
+                        <div class="overlay">
+                            <div class="overlay-infos">
+                                <h5>Project Title</h5>
+                                <a href="javascript:void(0)"><i class="ti-zoom-in"></i></a>
+                                <a href="javascript:void(0)"><i class="ti-link"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="img-wrapper">
+                        <img src="{{ asset('assets/imgs/folio-5.jpg') }}" alt="">
+                        <div class="overlay">
+                            <div class="overlay-infos">
+                                <h5>Project Title</h5>
+                                <a href="javascript:void(0)"><i class="ti-zoom-in"></i></a>
+                                <a href="javascript:void(0)"><i class="ti-link"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="img-wrapper">
+                        <img src="{{ asset('assets/imgs/folio-6.jpg') }}" alt="">
                         <div class="overlay">
                             <div class="overlay-infos">
                                 <h5>Project Title</h5>
@@ -309,7 +309,7 @@
                     <div class="carousel-item active">
                         <div class="card testmonial-card border">
                             <div class="card-body">
-                                <img src="assets/imgs/avatar-1.jpg" alt="">
+                                <img src="{{ asset('assets/imgs/avatar-1.jpg') }}" alt="">
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam nostrum voluptates
                                     in enim vel amet?</p>
                                 <h1 class="title">Emma Re</h1>
@@ -320,7 +320,7 @@
                     <div class="carousel-item">
                         <div class="card testmonial-card border">
                             <div class="card-body">
-                                <img src="assets/imgs/avatar-2.jpg" alt="">
+                                <img src="{{ asset('assets/imgs/avatar-2.jpg') }}" alt="">
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam nostrum voluptates
                                     in enim vel amet?</p>
                                 <h1 class="title">James Bert</h1>
@@ -331,7 +331,7 @@
                     <div class="carousel-item">
                         <div class="card testmonial-card border">
                             <div class="card-body">
-                                <img src="assets/imgs/avatar-3.jpg" alt="">
+                                <img src="{{ asset('assets/imgs/avatar-3.jpg') }}" alt="">
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam nostrum voluptates
                                     in enim vel amet?</p>
                                 <h1 class="title">Michael Abra</h1>
@@ -356,7 +356,7 @@
             <div class="row text-left">
                 <div class="col-md-4">
                     <div class="card border mb-4">
-                        <img src="assets/imgs/blog-1.jpg" alt="" class="card-img-top w-100">
+                        <img src="{{ asset('assets/imgs/blog-1.jpg') }}" alt="" class="card-img-top w-100">
                         <div class="card-body">
                             <h5 class="card-title">Designe for Everyone</h5>
                             <div class="post-details">
@@ -372,7 +372,7 @@
                 </div>
                 <div class="col-md-4">
                     <div class="card border mb-4">
-                        <img src="assets/imgs/blog-2.jpg" alt="" class="card-img-top w-100">
+                        <img src="{{ asset('assets/imgs/blog-2.jpg') }}" alt="" class="card-img-top w-100">
                         <div class="card-body">
                             <h5 class="card-title">Web Layouts</h5>
                             <div class="post-details">
@@ -388,7 +388,7 @@
                 </div>
                 <div class="col-md-4">
                     <div class="card border mb-4">
-                        <img src="assets/imgs/blog-3.jpg" alt="" class="card-img-top w-100">
+                        <img src="{{ asset('assets/imgs/blog-3.jpg') }}" alt="" class="card-img-top w-100">
                         <div class="card-body">
                             <h5 class="card-title">Bootstrap Framework</h5>
                             <div class="post-details">
@@ -510,13 +510,13 @@
     <!-- End of page footer -->
 
     <!-- core  -->
-    <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
-    <script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>
+    <script src="{{ asset('assets/vendors/jquery/jquery-3.4.1.js') }}"></script>
+    <script src="{{ asset('assets/vendors/bootstrap/bootstrap.bundle.js') }}"></script>
     <!-- bootstrap 3 affix -->
-    <script src="assets/vendors/bootstrap/bootstrap.affix.js"></script>
+    <script src="{{ asset('assets/vendors/bootstrap/bootstrap.affix.js') }}"></script>
 
     <!-- steller js -->
-    <script src="assets/js/steller.js"></script>
+    <script src="{{ asset('assets/js/steller.js') }}"></script>
 
 </body>
 
